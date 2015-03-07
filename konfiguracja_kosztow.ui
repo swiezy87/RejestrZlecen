@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Konfiguracja_Kosztow</class>
+ <widget class="QDialog" name="Konfiguracja_Kosztow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>641</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Konfiguracja ośrodków</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_szukaj">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_szukaj">
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>numer</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>dzial</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ido</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>blokada</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_szukaj">
+        <property name="text">
+         <string>Szukaj</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_wedlug">
+        <property name="text">
+         <string>Według</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_szukaj"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_opisnumerido">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_opis"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_dzial">
+        <property name="text">
+         <string>Dział</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_o1"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_ido">
+        <property name="text">
+         <string>Ido</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_ido"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_numer">
+        <property name="text">
+         <string>Numer</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QComboBox" name="comboBox_blokada">
+        <item>
+         <property name="text">
+          <string>NIE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TAK</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_blokada">
+        <property name="text">
+         <string>Blokada</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QTableView" name="tableView_osrodki"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_przyciski">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_dodaj">
+        <property name="text">
+         <string>Dodaj</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_edytuj">
+        <property name="text">
+         <string>Edytuj</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <spacer name="horizontalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

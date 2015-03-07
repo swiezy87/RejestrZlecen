@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1410</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Rejestr zgłoszeń serwisowych</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_Logowanie">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_Logowanie">
+          <property name="maximumSize">
+           <size>
+            <width>250</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Logowanie</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_Haslo">
+             <property name="text">
+              <string>Hasło</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_Login">
+             <property name="text">
+              <string>Login</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Zaloguj</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLineEdit" name="lineEdit_Login">
+             <property name="minimumSize">
+              <size>
+               <width>176</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLineEdit" name="lineEdit_Haslo">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_listazgloszen">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>764</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_lista_zgloszen">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <kerning>false</kerning>
+           </font>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_szukaj_prac">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>Lista pracowników</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="2">
+               <widget class="QPushButton" name="pushButton_szukaj_prac">
+                <property name="text">
+                 <string>odswież</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QComboBox" name="comboBox_szukaj_prac">
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>nazwisko</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>imie</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="lineEdit_szukaj_prac"/>
+              </item>
+              <item row="1" column="0" colspan="3">
+               <widget class="QTableView" name="tableView_uzytkownicy"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_szukaj_dzial">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>519</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Lista działów</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="4">
+               <widget class="QComboBox" name="comboBox_szukaj_dzial">
+                <item>
+                 <property name="text">
+                  <string>dzial</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>numer</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QPushButton" name="pushButton_szukaj_dzial">
+                <property name="text">
+                 <string>odswież</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLineEdit" name="lineEdit_szukaj_dzial"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QComboBox" name="comboBox_sortuj_osrodki">
+                <item>
+                 <property name="text">
+                  <string>numer</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>dzial</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_sortuj_osrodki">
+                <property name="text">
+                 <string>sortuj według</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0" colspan="7">
+               <widget class="QTableView" name="tableView_osrodki"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QGroupBox" name="groupBox_zgloszenie_przyciski">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="pushButton_dodaj_zgloszenie">
+                <property name="text">
+                 <string>Dodaj zgłoszenie F1</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_dodaj_czynnosc">
+                <property name="text">
+                 <string>Czynności F2</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_zakoncz_zgloszenie">
+                <property name="text">
+                 <string>Zakończ zgloszenie F3</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QGroupBox" name="groupBox_dodaj_zgloszenie">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_imie">
+                <property name="text">
+                 <string>Imię</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="4">
+               <widget class="QDateEdit" name="dateEdit_data_zakonczenia"/>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_punkty">
+                <property name="text">
+                 <string>Punkty</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0" colspan="7">
+               <widget class="QTextEdit" name="textEdit_opis_zgloszenia"/>
+              </item>
+              <item row="9" column="2">
+               <widget class="QLabel" name="label_opis_zakonczenia">
+                <property name="text">
+                 <string>Opis zakończenia</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="3">
+               <widget class="QLabel" name="label_idz">
+                <property name="text">
+                 <string>idz</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0" colspan="7">
+               <widget class="QTextEdit" name="textEdit_opis_zakonczenia"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="lineEdit_imie"/>
+              </item>
+              <item row="2" column="4">
+               <widget class="QDateEdit" name="dateEdit_data_zgloszenia"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_dzial">
+                <property name="text">
+                 <string>Dział</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="QLabel" name="label_data_zakonczenia">
+                <property name="text">
+                 <string>Data zakończenia</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="4">
+               <widget class="QLineEdit" name="lineEdit_ido"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_nazwisko">
+                <property name="text">
+                 <string>Nazwisko</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLineEdit" name="lineEdit_nazwisko"/>
+              </item>
+              <item row="3" column="6">
+               <widget class="QPushButton" name="pushButton_bierzaca_data_zak">
+                <property name="text">
+                 <string>BD</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <widget class="QLabel" name="label_idp">
+                <property name="text">
+                 <string>idp</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="6">
+               <widget class="QPushButton" name="pushButton_bierzaca_data_zgl">
+                <property name="text">
+                 <string>BD</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QLineEdit" name="lineEdit_punkty"/>
+              </item>
+              <item row="5" column="3">
+               <widget class="QLabel" name="label_ido">
+                <property name="text">
+                 <string>ido</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QLabel" name="label_data_zgloszenia">
+                <property name="text">
+                 <string>Data zgłoszenia</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="4">
+               <widget class="QLineEdit" name="lineEdit_idp"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QLineEdit" name="lineEdit_dzial"/>
+              </item>
+              <item row="6" column="4">
+               <widget class="QLineEdit" name="lineEdit_idz"/>
+              </item>
+              <item row="7" column="2">
+               <widget class="QLabel" name="label_opis_zgloszenia">
+                <property name="text">
+                 <string>Opis zgłoszenia</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="5">
+               <widget class="QToolButton" name="toolButton_data_zgl">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="5">
+               <widget class="QToolButton" name="toolButton_data_zak">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="6">
+               <widget class="QPushButton" name="pushButton_zatwierdz">
+                <property name="text">
+                 <string>Zatwierdź</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="6">
+               <widget class="QPushButton" name="pushButton_edytuj">
+                <property name="text">
+                 <string>Edytuj</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <widget class="QGroupBox" name="groupBox_szuakj_zgloszenie">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>221</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Lista zgłoszeń</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <item row="0" column="1">
+               <widget class="QDateEdit" name="dateEdit_od"/>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>do</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <widget class="QLineEdit" name="lineEdit_szukaj_zgloszenie"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_data_od">
+                <property name="text">
+                 <string>data zgłoszenia od</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QToolButton" name="toolButton_data_do">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QDateEdit" name="dateEdit_do"/>
+              </item>
+              <item row="0" column="8">
+               <widget class="QComboBox" name="comboBox_szukaj_zgloszenie">
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>p.imie</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>p.nazwisko</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>o.dzial</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>o.numer</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QToolButton" name="toolButton_data_od">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="11">
+               <widget class="QCheckBox" name="checkBox_szukaj_zgloszenie">
+                <property name="text">
+                 <string>Bez zakończonych</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="9">
+               <widget class="QPushButton" name="pushButton_szukaj_zgloszenie">
+                <property name="text">
+                 <string>odswież</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="14">
+               <widget class="QComboBox" name="comboBox_sortuj">
+                <item>
+                 <property name="text">
+                  <string>z.data_zgloszenia</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>z.idz</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>p.imie</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>p.nazwisko</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>o.dzial</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>o.numer</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>z.data_zakoncczenia</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>z.zakonczono</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="17">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0" colspan="18">
+               <widget class="QTableView" name="tableView_listazgloszen"/>
+              </item>
+              <item row="0" column="10">
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="12">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="13">
+               <widget class="QLabel" name="label_sortuj_zgloszenie">
+                <property name="text">
+                 <string>Sortuj według</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1410</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuKonfiguracja">
+    <property name="title">
+     <string>Konfiguracja</string>
+    </property>
+    <addaction name="actionKonfiguracja_bazy"/>
+   </widget>
+   <widget class="QMenu" name="menuU_ytkownicy">
+    <property name="title">
+     <string>Użytkownicy</string>
+    </property>
+    <addaction name="actionKonfiguracja_u_ytkownik_w"/>
+   </widget>
+   <widget class="QMenu" name="menuO_programie">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionO_programie"/>
+   </widget>
+   <widget class="QMenu" name="menuO_rodki_koszt_w">
+    <property name="title">
+     <string>Ośrodki kosztów</string>
+    </property>
+    <addaction name="actionKonfiguracja_o_rodk_w"/>
+   </widget>
+   <widget class="QMenu" name="menuCzynno_ci">
+    <property name="title">
+     <string>Czynności</string>
+    </property>
+    <addaction name="actionKonfiguracja_czynno_ci_2"/>
+   </widget>
+   <widget class="QMenu" name="menuRaporty">
+    <property name="title">
+     <string>Raporty</string>
+    </property>
+    <addaction name="actionZestawienie_miesi_czne"/>
+   </widget>
+   <addaction name="menuO_rodki_koszt_w"/>
+   <addaction name="menuCzynno_ci"/>
+   <addaction name="menuU_ytkownicy"/>
+   <addaction name="menuRaporty"/>
+   <addaction name="menuKonfiguracja"/>
+   <addaction name="menuO_programie"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionKonfiguracja_bazy">
+   <property name="text">
+    <string>Konfiguracja bazy</string>
+   </property>
+  </action>
+  <action name="actionO_programie">
+   <property name="text">
+    <string>O programie</string>
+   </property>
+  </action>
+  <action name="actionKonfiguracja_o_rodk_w">
+   <property name="text">
+    <string>Konfiguracja ośrodków</string>
+   </property>
+  </action>
+  <action name="actionZestawienie_miesi_czne">
+   <property name="text">
+    <string>Zestawienie miesięczne</string>
+   </property>
+  </action>
+  <action name="actionKonfiguracja_czynno_ci_2">
+   <property name="text">
+    <string>Konfiguracja czynności</string>
+   </property>
+  </action>
+  <action name="actionKonfiguracja_u_ytkownik_w">
+   <property name="text">
+    <string>Konfiguracja użytkowników</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
